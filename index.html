@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập buổi 3</title>
+  </head>
+  <body>
+
+    
+    <!-- Câu 1 -->
+    <div>
+      <h2>Câu 1: Bài tập về Iframe</h2>
+      <p>
+        <strong>Yêu cầu</strong>: Vào trang google map, tìm 1 địa điểm yêu thích
+        và nhúng thẻ iframe của google map vào website. Để hiển thị được như
+        sau:
+      </p>
+
+      <p>
+        <strong>Lưu ý</strong>: Thử tự lên google tìm hiểu cách nhúng bản đồ vào
+        website.
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.28035560038!2d105.78935040949999!3d20.981396089325564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accf04011535%3A0xa93dfa61fb043aaf!2zSOG7jWMgVmnhu4duIEFuIG5pbmggTmjDom4gRMOibg!5e0!3m2!1svi!2s!4v1686566857611!5m2!1svi!2s"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Câu 2 -->
+    <div>
+      <h2>Câu 2: Bài tập về form</h2>
+      <p>
+        <strong>Yêu cầu</strong>: Tạo form <strong>đăng ký</strong> như form bên
+        dưới. Phải có cả thẻ form bọc bên ngoài. Khi click vào thẻ label thì
+        phải focus vào đúng ô input tương ứng với label đó. Các ô input phải yêu
+        cầu nhập nội dung mới cho Đăng ký.
+      </p>
+
+      <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank"">
+        <label for="full_name">Họ tên</label><br />
+        <input
+          type="text"
+          id="full_name"
+          name="Full_name"
+          placeholder="Ví dụ levana"
+          required
+        />
+        <br>
+        <label for="email">Email</label><br />
+        <input
+          type="email"
+          id="email"
+          name="Email"
+          placeholder="Ví dụ levana@gmail.com"
+          required
+        />
+
+        <br>
+        <label for="password">Mật khẩu</label><br />
+        <input
+          type="password"
+          id="password"
+          name="Password"
+          required
+        />
+        <br>
+
+        <input type="submit" value="Đăng ký" />
+      </form>
+
+      <p><strong>Yêu cầu</strong>: Tạo form <strong>tìm kiếm</strong> như dưới đây: (Phải có cả thẻ form bọc bên ngoài. Phải nhập nội dung mới cho bấm Tìm kiếm.)</p>
+      <form action="">
+        <input type="text" required>
+        <button type="submit" placeholder="Nhập nội dung tìm kiếm...">Tìm kiếm</button>
+      </form>
+    </div>
+
+    <!-- Câu 3 -->
+    <div>
+        <p><strong>Yêu cầu</strong>: Vẽ lại các thẻ dưới đây:</p>
+        <div>
+            <p><strong>-Thẻ input:</strong></p>
+            <div>
+                Kiểu text
+                <br>
+                <input type="text" placeholder="Nhập họ tên...">
+            </div>
+
+            <br>
+            <div>
+                Kiểu email
+                <br>
+                <input type="email" placeholder="Nhập họ email...">
+            </div>
+
+            <br>
+            <div>
+                Kiểu password
+                <br>
+                <input type="password">
+            </div>
+
+            <br>
+            <div>
+                Kiểu number
+                <br>
+                <input type="number">
+            </div>
+
+            <br>
+            <div>
+                Kiểu date
+                <br>
+                <input type="date">
+            </div>
+
+            <br>
+            <div>
+                Kiểu time
+                <br>
+                <input type="time" >
+            </div>
+
+            <br>
+            <div>
+                Kiểu file
+                <br>
+                <input type="file">
+            </div>
+
+            <br>
+            <div>
+                Kiểu radio
+                <br>
+
+                <input type="radio" value="nam" id="nam" name="Gioi_tinh"> 
+                <label for="nam">Nam</label>
+
+                <br>
+                <input type="radio" value="nu" id="nu" name="Gioi_tinh"> 
+                <label for="nu">Nữ</label>
+
+                <br>
+                <input type="radio" value="khac" id="nu" name="Gioi_tinh"> 
+                <label for="khac">Khác</label>
+            </div>
+
+            <br>
+            <div>
+                Kiểu range <br>
+                <label for="vol">Âm lượng (min=0 và max=100):</label>
+                <br>
+                <input id="vol" name="vol" type="range" min=0 max=100>
+            </div>
+
+            <br>
+            <div>
+                Kiểu color
+                <br>
+                <input type="color">
+            </div>
+
+            <div>
+                <p><strong>-Thẻ select</strong></p>
+
+                <label for="trang_phuc">Chọn danh mục:</label> <br>
+                <select name="trang phuc" id="trang_phuc">
+                    <option value="quan">Quần</option>
+                    <option value="ao">Áo</option>
+                    <option value="mu">Mũ</option>
+                    <option value="khan">khan</option>
+                </select>
+            </div>
+
+            <div>
+                <p><strong>Thẻ textarea có cols=30 rows=10</strong></p>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
